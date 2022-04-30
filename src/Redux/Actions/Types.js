@@ -1,0 +1,5 @@
+export const FETCH_GIF_SUCCESS = "FETCH_GIF_SUCCESS"; 
+export const FETCH_GIF_END = "FETCH_GIF_END"; 
+export const FETCH_GIF_START = "FETCH_GIF_START"; 
+
+ 
