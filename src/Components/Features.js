@@ -4,11 +4,12 @@ import feature2 from "../Assets/Svg/feature2.svg";
 import feature3 from "../Assets/Svg/feature3.svg";
 import feature4 from "../Assets/Svg/feature4.svg";
 import arrowright from "../Assets/Svg/arrowright.svg";
+import dashline from "../Assets/Svg/dashline.svg";
 import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
-    <div className="bg-[#F1EBE3] py-10 ">
+    <div className="relative bg-[#F1EBE3] py-10 ">
       <div className="container w-11/12 mx-auto">
         <div className="relative mt-2 mb-5">
           <p className="title-feat"></p>
@@ -17,8 +18,11 @@ const Features = () => {
         <p className="mb-14 pt-6 fomt-medium text-3xl text-center">
           What we offer
         </p>
-        <div className=" grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div>
+        <div className="hidden lg:block transform translate-y-[380px] translate-x-[120px] z-[1]  absolute ">
+          <img src={dashline} className="h-full w-full" alt="feature1" />
+        </div>
+        <div className="  grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
+          <div className='z-[2]'>
             <img src={feature1} className="h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left md:ml-[72px]">
@@ -31,8 +35,8 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div className="md:order-last">
+        <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
+          <div className="md:order-last z-[2]">
             <img src={feature2} className="h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left  md:ml-[72px]">
@@ -48,9 +52,9 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div>
-            <img src={feature3} className="h-full w-full" alt="feature1" />
+        <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
+          <div className='z-[2] '>
+            <img src={feature3} className=" h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left md:ml-[72px]">
             <h1 className="text-xl font-medium">Unify student cards</h1>
@@ -61,8 +65,8 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div className="md:order-last">
+        <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
+          <div className="md:order-last z-[2] ">
             <img src={feature4} className="h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left md:ml-[72px]">
@@ -77,7 +81,10 @@ const Features = () => {
         </div>
 
         <p className="text-center">
-          <Link to="/features" className="flex space-x-2 justify-center items-center">
+          <Link
+            to="/features"
+            className="flex space-x-2 justify-center items-center"
+          >
             View more Features
             <span>
               <img src={arrowright} className="h-full w-full ml-2" alt="" />
