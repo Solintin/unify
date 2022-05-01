@@ -9,3 +9,12 @@
     width: 8px;
     border-radius: 9999px;
 }
+.products .productInfo{
+    display: none;
+}
+.products:hover .productInfo{
+    display: block;
+}
+
+
+

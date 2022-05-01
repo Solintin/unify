@@ -1,44 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import logo from "../../Assets/Svg/logo.svg";
 import ArrowDown from "../../Assets/Svg/ArrowDown.svg";
+import Product from "./Product";
 
 const Header = () => {
-  const navigationsLinks = [
-    { title: "Home", link: "home" },
-    { title: "Features", link: "features" },
-    { title: "Products", link: "products" },
-    { title: "FAQs", link: "Faqs" },
-  ];
-  const pathname = window.location.pathname;
-  console.log(pathname);
+  const [productInfo, setProductInfo] = useState(false);
+
   return (
-    <div>
+    <div className="fixed z-10 bg-white inset-x-0 top-0">
       <div className="header container py-3 w-11/12 mx-auto flex justify-between items-center">
         <div>
           <img src={logo} alt="" className="w-full h-full object-contain" />
         </div>
         <div className=" flex justify-between items-center space-x-8">
-          {navigationsLinks.map((item, id) => {
-            return (
-              <NavLink
-                activeClassName="active_link"
-                className={`text-[#575765] text-base`}
-                key={id}
-                to={`/${item.link}`}
-              >
-                {item.title}
-                {
-                  // item.title === 'Products' &&  <img src={ArrowDown} alt="" />
-                }
-              </NavLink>
-            );
-          })}
+          <NavLink
+            activeClassName="active_link"
+            className={`text-[#575765] text-base`}
+            to="/home"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            activeClassName="active_link"
+            className={`text-[#575765] text-base`}
+            to="/features"
+          >
+            Features
+          </NavLink>
+          <div
+            onClick={() => {
+              setProductInfo(!productInfo);
+            }}
+            className={`${
+              productInfo ? "text-[#1B1B22]" : ""
+            }  text-[#575765] cursor-pointer flex items-center text-base `}
+          >
+            Products
+            <img src={ArrowDown} className="ml-2" alt="" />
+          </div>
+          {productInfo && <Product />}
+          <NavLink
+            activeClassName="active_link"
+            className={`text-[#575765] text-base `}
+            to="/faqs"
+          >
+            FAQs
+          </NavLink>
         </div>
-        <div className="bg-black rounded-[8px] p-2 text-white text-base">
+        <button className="bg-black rounded-[8px] p-2 text-white text-base">
           Request demo
-        </div>
+        </button>
       </div>
     </div>
   );

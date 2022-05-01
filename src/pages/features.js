@@ -2,7 +2,7 @@ import React from 'react';
 
 const features = () => {
     return (
-        <div>
+        <div className='pt-20'>
             features
         </div>
     );

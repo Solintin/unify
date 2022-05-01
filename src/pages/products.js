@@ -2,7 +2,7 @@ import React from 'react';
 
 const products = () => {
     return (
-        <div>
+        <div className='pt-20'>
             products
         </div>
     );

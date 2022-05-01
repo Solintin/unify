@@ -14,7 +14,6 @@ const App = () => {
   useEffect(() => {
     function reportWindowSize() {
       setWindowWidth(window.innerWidth);
-      console.log(window.innerHeight, window.innerWidth);
     }
     // Trigger this function on resize
     window.addEventListener("resize", reportWindowSize);
@@ -24,7 +23,7 @@ const App = () => {
   return (
     <div className="">
       <Router>
-      { windowWidth > 570 ? <Header /> : <MobileHeader />    }
+      { windowWidth > 760 ? <Header /> : <MobileHeader />    }
         
         <Switch>
           <Route exact path="/" component={Index} />
