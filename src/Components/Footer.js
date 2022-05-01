@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-12 items-center   py-20">
           <div className="mt-10 md:mt-0 col-span-5">
             <div>
-              <img src={logowhite} alt="" />
+              <img src={logowhite} alt="logowhite" />
             </div>
             <p className="mt-5 mb-16 pr-28">Enabling the future</p>
             <p className="mt-2 mb-4">Join our Community</p>
