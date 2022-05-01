@@ -10,3 +10,26 @@
 body {
   background: #fafafa;
 }
+
+.swiper-button-prev{
+  position: fixed !important;
+  left: 44% !important;
+  top: 93% !important;
+
+
+}
+.swiper .swiper-button-next{
+  position: fixed !important;
+  right: 44% !important;
+  top: 93% !important;
+}
+
+@media screen and (max-width: 768px){
+  .swiper-button-prev{
+    left: 40% !important;
+  
+  }
+  .swiper .swiper-button-next{
+    right: 40% !important;
+  }
+}

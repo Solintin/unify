@@ -6,7 +6,7 @@ import partner2 from "../Assets/Svg/partner2.svg";
 import partner3 from "../Assets/Svg/partner3.svg";
 import partner4 from "../Assets/Svg/partner4.svg";
 import partner5 from "../Assets/Svg/partner5.svg";
-// import Commentaries from "./Commentaries";
+import Commentaries from "./Commentaries";
 
 const Partners = () => {
   return (
@@ -30,7 +30,7 @@ const Partners = () => {
         <img src={partner5} className="h-[100px] w-[114px]" alt="" />
       </div>
 
-      <div className="text-center my-4"> Commentaries Slides </div>
+      <div className="text-center my-4"> <Commentaries /> </div>
 
 
     </div>
