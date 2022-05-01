@@ -92,6 +92,29 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.title-feat-faq:before {
+  position: absolute;
+  content: " ";
+  z-index: 1;
+  width: 200px;
+  height: 2px;
+  background: #f1ebe3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-feat-faq::after {
+  position: absolute;
+  content: "Have Questions?";
+  z-index: 2;
+  font-size: 20px;
+  color: #5f1da0;
+  padding: 1px 10px;
+  background: #FAFAFA;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .title-feat:before {
   position: absolute;
   content: " ";
