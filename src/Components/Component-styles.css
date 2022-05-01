@@ -39,7 +39,54 @@
   font-size: 20px;
   color: #5f1da0;
   padding: 1px 10px;
+   background: #FAFAFA;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-feat-page:before {
+  position: absolute;
+  content: " ";
+  z-index: 1;
+  width: 200px;
+  height: 2px;
+  background: #f1ebe3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-feat-page::after {
+  position: absolute;
+  content: "What we offer";
+  z-index: 2;
+  font-size: 20px;
+  color: #5f1da0;
+  padding: 1px 10px;
+  background: #FAFAFA;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-feat:before {
+  position: absolute;
+  content: " ";
+  z-index: 1;
+  width: 150px;
+  height: 2px;
   background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-feat::after {
+  position: absolute;
+  content: "Features";
+  z-index: 2;
+  font-size: 20px;
+  color: #5f1da0;
+  padding: 1px 10px;
+  background: #F1EBE3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -51,12 +98,50 @@
   border-radius: 8px;
   padding: 24px;
 }
-.u-card-title{
-  background: #1b1b22;
+.u-card-title-1 {
+  width: max-content;
+  background: #fff;
   border-radius: 8px;
-  box-shadow: 8px 8px #a999b9;
+  box-shadow: 4px 4px #5f5fcc;
   padding: 8px 12px;
-  color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140.1%;
+}
+.u-card-title-2 {
+  background: #fff;
+  width: max-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px #95bd9e;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140.1%;
+}
+.u-card-title-3 {
+  background: #fff;
+  width: max-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px #eda3e6;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140.1%;
+}
+.u-card-title-4 {
+  background: #fff;
+  width: max-content;
+  border-radius: 8px;
+  box-shadow: 4px 4px #dbca74;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  color: #000;
   font-weight: 500;
   font-size: 20px;
   line-height: 140.1%;

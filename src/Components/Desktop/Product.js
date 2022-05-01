@@ -2,10 +2,11 @@ import React from "react";
 import productUnifyLogo from "../../Assets/Svg/productunifylogo.svg";
 import arrowright from "../../Assets/Svg/arrowright.svg";
 import forms from "../../Assets/Svg/forms.svg";
+import './style.css'
 const Product = () => {
   return (
-    <div className="productInfo">
-      <div className="fixed bg-white inset-x-0 top-14 pb-11">
+    <div className="header-productInfo productInfo">
+      <div className="fixed header-productInfo inset-x-0 top-14 pb-11">
         <div className="header container py-3 w-11/12 mx-auto grid grid-cols-12">
           <div className="col-span-5 text-[20px] font-medium">
             Products by Unify

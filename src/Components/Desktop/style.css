@@ -1,20 +1,22 @@
-.active_link{
-    @apply text-[#1B1B22]
+.active_link {
+  @apply text-[#1B1B22];
 }
-.active_link::after{
-    position: absolute;
-    content: '';
-    background-color: black;
-    height: 8px;
-    width: 8px;
-    border-radius: 9999px;
+.active_link::after {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 8px;
+  width: 8px;
+  border-radius: 9999px;
 }
-.products .productInfo{
-    display: none;
+.products .productInfo {
+  display: none;
 }
-.products:hover .productInfo{
-    display: block;
-}
+.products:hover .productInfo {
+  display: block;
 
-
-
+}
+.header-productInfo{
+    background: #fafafa;
+    box-shadow: 0px 4px 4px rgba(116, 115, 114, 0.075);
+}
