@@ -8,6 +8,9 @@ import products from "./pages/products";
 import faqs from "./pages/faqs";
 import features from "./pages/features";
 import Footer from "./Components/Footer";
+import about from "./pages/about";
+import privacy from "./pages/privacy";
+import tandc from "./pages/tandc";
 import Scrolltotop from "./ScrollToTop";
 
 const App = () => {
@@ -34,6 +37,9 @@ const App = () => {
           <Route path="/faqs" component={faqs} />
           <Route path="/features" component={features} />
           <Route path="/products" component={products} />
+          <Route path="/about" component={about} />
+          <Route path="/privacy" component={privacy} />
+          <Route path="/tandc" component={tandc} />
         </Switch>
         <Footer/>
       </Router>

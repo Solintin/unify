@@ -26,7 +26,7 @@ const Commentaries = () => {
     return () => window.removeEventListener("resize", reportWindowSize);
   }, []);
   return (
-    <div className="text-black ml-5">
+    <div className="text-black mx-8">
       <Swiper
         slidesPerView={windowWidth > 760 ? 3 : 1}
         
