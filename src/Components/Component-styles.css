@@ -16,7 +16,48 @@
   background: purple;
 }
 
-.video{
+.video {
   left: 50%;
-  transform : translateX(-50%)
+  transform: translateX(-50%);
+  height: 320px;
+}
+.title:before {
+  position: absolute;
+  content: " ";
+  z-index: 1;
+  width: 200px;
+  height: 2px;
+  background: #f1ebe3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title::after {
+  position: absolute;
+  content: "Who is Unify for";
+  z-index: 2;
+  font-size: 20px;
+  color: #5f1da0;
+  padding: 1px 10px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.u-card {
+  background: #e7dfed;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+}
+.u-card-title{
+  background: #1b1b22;
+  border-radius: 8px;
+  box-shadow: 8px 8px #a999b9;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140.1%;
 }
