@@ -7,6 +7,7 @@ import home from "./pages/home";
 import products from "./pages/products";
 import faqs from "./pages/faqs";
 import features from "./pages/features";
+import Footer from "./Components/Footer";
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/features" component={features} />
           <Route path="/products" component={products} />
         </Switch>
+        <Footer/>
       </Router>
     </div>
   );
