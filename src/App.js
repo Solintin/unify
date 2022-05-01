@@ -8,6 +8,7 @@ import products from "./pages/products";
 import faqs from "./pages/faqs";
 import features from "./pages/features";
 import Footer from "./Components/Footer";
+import Scrolltotop from "./ScrollToTop";
 
 const App = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <div className="">
       <Router>
+      <Scrolltotop />
       { windowWidth > 760 ? <Header /> : <MobileHeader />    }
         
         <Switch>

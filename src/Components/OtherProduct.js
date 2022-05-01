@@ -4,7 +4,7 @@ import arrowright from "../Assets/Svg/arrowright.svg";
 import forms from "../Assets/Svg/forms.svg";
 const OtherProduct = () => {
   return (
-    <div className="py-20">
+    <div className="pb-20">
       <p className="text-center text-3xl font-medium">
         Other products from Unify
       </p>

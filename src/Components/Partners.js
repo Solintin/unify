@@ -10,7 +10,7 @@ import partner5 from "../Assets/Svg/partner5.svg";
 
 const Partners = () => {
   return (
-    <div className="bg-[#E7DFED] py-20">
+    <div className=" md:-translate-y-20 transform bg-[#E7DFED] py-20">
       <div className="px-10 text-center  text-[32px] text-[#1B1B22]">
         Driving
         <span className="relative mx-1">
