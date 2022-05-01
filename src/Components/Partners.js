@@ -11,14 +11,14 @@ import partner5 from "../Assets/Svg/partner5.svg";
 const Partners = () => {
   return (
     <div className="bg-[#E7DFED] py-20">
-      <div className="justify-center flex text-[32px] text-[#1B1B22]">
+      <div className="px-10 text-center  text-[32px] text-[#1B1B22]">
         Driving
-        <div className="relative mx-1">
-          <div className=" absolute translate-y-10">
+        <span className="relative mx-1">
+          <span className=" absolute translate-y-10">
             <img src={mark} alt="" />
-          </div>
+          </span>
           growth
-        </div>
+        </span>
         in top tertiary institutions
       </div>
 
