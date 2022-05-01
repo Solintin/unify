@@ -2,6 +2,7 @@ import React from "react";
 import "./Component-styles.css";
 import arrowright from "../Assets/Svg/arrowrightwhite.svg";
 import HeroImg from "../Assets/Img/HeroImg.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,9 +24,9 @@ const Hero = () => {
             <button className="cta-button flex items-center space-x-2">
               <span>Request demo</span> <img src={arrowright} alt="" />
             </button>
-            <a href="#" className="underline">
+            <Link to="#" className="underline">
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-7 text-black md:pl-20 pl-0 flex space-x-2">
