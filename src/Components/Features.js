@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
-    <div className="bg-[#F1EBE3] py-10 ">
+    <div className="bg-[#F1EBE3] py-10  pb-36">
       <div className="container w-11/12 mx-auto">
         <div className="relative mt-2 mb-5">
           <p className="title-feat"></p>
