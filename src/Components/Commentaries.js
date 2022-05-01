@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-// import Book1 from "./Book1";
-// import Book2 from "./Book2";
-import feature3 from "../Assets/Svg/feature3.svg";
-import feature4 from "../Assets/Svg/feature4.svg";
+
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
