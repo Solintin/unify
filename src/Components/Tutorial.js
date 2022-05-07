@@ -11,7 +11,7 @@ const Tutorial = () => {
         <iframe
         title="Unify educative tutorial workthrough"
         className="w-full md:h-[380px] h-[250px] ring-4 ring-white  rounded"
-          src="https://www.youtube.com/embed/HAyzyskPuZU"
+          src="https://www.youtube.com/embed/-DYElq-8B1w"
         ></iframe>
       </div>
       <div className="absolute hidden md:block top-[350px] left-[50px]"> <img src={ropearrow} alt="" /> </div>
