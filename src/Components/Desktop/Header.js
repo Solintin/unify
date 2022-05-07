@@ -12,12 +12,13 @@ const Header = () => {
     <div className="fixed z-10 bg-[#FAFAFA] inset-x-0 top-0">
       <div className="header container py-3 w-11/12 mx-auto flex justify-between items-center">
         <div>
-        <a href="/">
-        <img src={logo} alt="" className="w-full h-full object-contain" />
-        </a>
+          <a href="/">
+            <img src={logo} alt="" className="w-full h-full object-contain" />
+          </a>
         </div>
         <div className=" flex justify-between items-center space-x-8">
           <NavLink
+            onClick={() => setProductInfo(false)}
             activeClassName="active_link"
             className={`text-[#575765] text-base`}
             to="/home"
@@ -25,6 +26,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
+            onClick={() => setProductInfo(false)}
             activeClassName="active_link"
             className={`text-[#575765] text-base`}
             to="/features"
@@ -44,6 +46,7 @@ const Header = () => {
           </div>
           {productInfo && <Product />}
           <NavLink
+            onClick={() => setProductInfo(false)}
             activeClassName="active_link"
             className={`text-[#575765] text-base `}
             to="/faqs"

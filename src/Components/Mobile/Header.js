@@ -12,6 +12,11 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [productInfo, setProductInfo] = useState(false);
 
+  const offActiveToggledState = () => {
+    setIsMobile(false);
+    setProductInfo(false);
+  };
+
   return (
     <div className="fixed z-30  header-mobile top-0 w-full">
       <div className="w-11/12 mx-auto container ">
@@ -46,6 +51,7 @@ const Header = () => {
             <div className=" bg-white z-20 inset-x-0 top-[43px] pb-20">
               <div className=" flex flex-col space-y-8 mb-4">
                 <NavLink
+                  onClick={() => offActiveToggledState()}
                   activeClassName="active_link"
                   className={`text-[#575765] text-base`}
                   to="/home"
@@ -53,6 +59,7 @@ const Header = () => {
                   Home
                 </NavLink>
                 <NavLink
+                  onClick={() => offActiveToggledState()}
                   activeClassName="active_link"
                   className={`text-[#575765] text-base`}
                   to="/features"
@@ -91,6 +98,7 @@ const Header = () => {
                   </>
                 )}
                 <NavLink
+                  onClick={() => offActiveToggledState()}
                   activeClassName="active_link"
                   className={`text-[#575765] text-base `}
                   to="/faqs"
