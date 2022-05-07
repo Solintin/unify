@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage for web
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+// import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
@@ -38,4 +38,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register();

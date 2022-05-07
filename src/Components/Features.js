@@ -1,15 +1,15 @@
 import React from "react";
 import feature1 from "../Assets/Svg/feature1.svg";
 import feature2 from "../Assets/Svg/feature2.svg";
+import feature6 from "../Assets/Svg/feature6.svg";
 import feature3 from "../Assets/Svg/feature3.svg";
-import feature4 from "../Assets/Svg/feature4.svg";
 import arrowright from "../Assets/Svg/arrowright.svg";
 import dashline from "../Assets/Svg/dashline.svg";
 import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
-    <div className="relative bg-[#F1EBE3] py-10 ">
+    <div className="relative bg-[#F1EBE3] pt-10 md:pb-36 pb-14 ">
       <div className="container w-11/12 mx-auto">
         <div className="relative mt-2 mb-5">
           <p className="title-feat"></p>
@@ -22,7 +22,7 @@ const Features = () => {
           <img src={dashline} className="h-full w-full" alt="feature1" />
         </div>
         <div className="  grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div className='z-[2]'>
+          <div className="z-[2]">
             <img src={feature1} className="h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left md:ml-[72px]">
@@ -35,25 +35,25 @@ const Features = () => {
             </p>
           </div>
         </div>
+
         <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
           <div className="md:order-last z-[2]">
-            <img src={feature2} className="h-full w-full" alt="feature1" />
+            <img src={feature6} className="h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left  md:ml-[72px]">
             <h1 className="text-xl font-medium">
-              Student Id and debit card integration
+              {" "}
+              Audio And Video Conferencing Tool
             </h1>
             <p className="text-xl mt-8 text-[#575765] ">
-              A wallet system is created for all users of the platform toward
-              performing various financial transactions such as paying school
-              fees, buying materials,staff salaries etc. This allows for proper
-              financial management and tracking for students, staff, and the
-              institution at large.
+              Unify has advanced e-learning automated features that connect the
+              students with lecturers beyond the walls of the classroom making
+              it a borderless learning platform for schools.
             </p>
           </div>
         </div>
         <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div className='z-[2] '>
+          <div className="z-[2] ">
             <img src={feature3} className=" h-full w-full" alt="feature1" />
           </div>
           <div className="text-center md:text-left md:ml-[72px]">
@@ -65,17 +65,19 @@ const Features = () => {
             </p>
           </div>
         </div>
+
         <div className="z-[2] grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
-          <div className="md:order-last z-[2] ">
-            <img src={feature4} className="h-full w-full" alt="feature1" />
+          <div className="md:order-last z-[2]">
+            <img src={feature2} className="h-full w-full" alt="feature1" />
           </div>
-          <div className="text-center md:text-left md:ml-[72px]">
-            <h1 className="text-xl font-medium">
-              Timely Updates Through Newsletter
-            </h1>
-            <p className="text-xl mt-8 text-[#575765]">
-              All users are able to effectively manage their activities from
-              dashboards specially tailored to their needs.
+          <div className="text-center md:text-left  md:ml-[72px]">
+            <h1 className="text-xl font-medium">Payment And Wallet System</h1>
+            <p className="text-xl mt-8 text-[#575765] ">
+              A wallet system is created for all users of the platform toward
+              performing various financial transactions such as paying school
+              fees, buying materials,staff salaries etc. This allows for proper
+              financial management and tracking for students, staff, and the
+              institution at large.
             </p>
           </div>
         </div>
