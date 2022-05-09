@@ -5,7 +5,6 @@ import feature6 from "../Assets/Svg/feature6.svg";
 import feature3 from "../Assets/Svg/feature3.svg";
 import arrowright from "../Assets/Svg/arrowright.svg";
 import dashline from "../Assets/Svg/dashline.svg";
-import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -18,7 +17,7 @@ const Features = () => {
         <p className="mb-14 pt-6 fomt-medium text-3xl text-center">
           What we offer
         </p>
-        <div className="hidden lg:block transform translate-y-[380px] translate-x-[120px] z-[1]  absolute ">
+        <div className="hidden lg:block transform translate-y-[450px] translate-x-[120px] z-[1]  absolute ">
           <img src={dashline} className="h-full w-full" alt="feature1" />
         </div>
         <div className="  grid md:grid-cols-2 items-center md:gap-28 gap-8 md:mb-20 mb-8">
@@ -83,15 +82,15 @@ const Features = () => {
         </div>
 
         <p className="text-center">
-          <Link
-            to="/features"
+          <a
+            href="/features"
             className="flex space-x-2 justify-center items-center"
           >
             View more Features
             <span>
               <img src={arrowright} className="h-full w-full ml-2" alt="" />
             </span>
-          </Link>
+          </a>
         </p>
       </div>
     </div>

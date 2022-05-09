@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ios from "../Assets/Svg/ios.svg";
 import android from "../Assets/Svg/android.svg";
 import combo from "../Assets/Svg/combo.svg";
@@ -7,7 +7,12 @@ import ig from "../Assets/Svg/ig.svg";
 import fb from "../Assets/Svg/fb.svg";
 import twitter from "../Assets/Svg/twitter.svg";
 import { Link } from "react-router-dom";
+import { PopupButton } from "react-calendly";
+import Forms from "./Desktop/Forms";
+
 const Footer = () => {
+  const [openForm, setOpenForm] = useState(false);
+
   return (
     <div className="grid">
       <div className="bg-[#1D0633]  z-10 py-10 text-white">
@@ -52,12 +57,22 @@ const Footer = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                 <div>
                   <h1>Links</h1>
-                  <div className="mt-8 text-[#ECD8FF] text-base flex flex-col space-y-5">
-                    <Link to="#"> Request a demo </Link>
+                  <div className="text-left mt-8 text-[#ECD8FF] text-base flex flex-col space-y-5">
+                    <PopupButton
+                      url="https://calendly.com/ufy/unify-product-demo"
+                      rootElement={document.getElementById("root")}
+                      text="Request demo"
+                    />
                     <Link to="#"> Download the app</Link>
-                    <Link to="/features"> Features </Link>
                     <Link to="#"> Certifications by Unify </Link>
-                    <Link to="#"> Unify forms </Link>
+                    <p
+                      onClick={() => {
+                        setOpenForm(!openForm);
+                      }}
+                    >
+                      {" "}
+                      Unify forms{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -74,26 +89,25 @@ const Footer = () => {
                 <div>
                   <h1>Socials</h1>
                   <div className="hidden md:flex mt-8 text-[#ECD8FF] text-base  flex-col space-y-5">
-                    <a href="https://www.instagram.com/unify_ng/"> Instagram </a>
+                    <a href="https://www.instagram.com/unify_ng/">
+                      {" "}
+                      Instagram{" "}
+                    </a>
 
                     <a href="https://web.facebook.com/unifyng/">Facebook</a>
 
                     <a href="https://twitter.com/unify_ng/"> Twitter </a>
-
                   </div>
                   <div className="md:hidden mt-8 flex space-x-9">
                     <a href="https://web.facebook.com/unifyng/">
-
                       {" "}
                       <img src={fb} alt="" />{" "}
                     </a>
                     <a href="https://www.instagram.com/unify_ng/">
-
                       {" "}
                       <img src={ig} alt="" />{" "}
                     </a>
                     <a href="https://twitter.com/unify_ng/">
-
                       {" "}
                       <img src={twitter} alt="" />{" "}
                     </a>
@@ -104,6 +118,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {openForm && (
+        <Forms
+          handleClose={() => {
+            setOpenForm(!openForm);
+          }}
+        />
+      )}
     </div>
   );
 };

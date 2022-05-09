@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import productUnifyLogo from "../../Assets/Svg/productunifylogo.svg";
 import arrowright from "../../Assets/Svg/arrowright.svg";
 import forms from "../../Assets/Svg/forms.svg";
-import './style.css'
+import "./style.css";
+import Forms from "./Forms";
 const Product = () => {
+  const [openForm, setOpenForm] = useState(false);
   return (
     <div className="header-productInfo productInfo">
       <div className="fixed header-productInfo inset-x-0 top-14 pb-11">
@@ -24,13 +26,25 @@ const Product = () => {
               <img src={forms} alt="" />
               <p>Unify forms</p>
             </div>
-            <div className="flex items-center space-x-2 ">
-              <p>Visit site</p>
+            <div
+              onClick={() => {
+                setOpenForm(!openForm);
+              }}
+              className="cursor-pointer flex items-center space-x-2 "
+            >
+              <p>Go to forms</p>
               <img src={arrowright} alt="" />
             </div>
           </div>
         </div>
       </div>
+      {openForm && (
+        <Forms
+          handleClose={() => {
+            setOpenForm(!openForm);
+          }}
+        />
+      )}
     </div>
   );
 };

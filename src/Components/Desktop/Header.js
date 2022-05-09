@@ -4,6 +4,7 @@ import "./style.css";
 import logo from "../../Assets/Svg/logo.svg";
 import ArrowDown from "../../Assets/Svg/ArrowDown.svg";
 import Product from "./Product";
+import { PopupButton } from "react-calendly";
 
 const Header = () => {
   const [productInfo, setProductInfo] = useState(false);
@@ -54,9 +55,13 @@ const Header = () => {
             FAQs
           </NavLink>
         </div>
-        <button className="bg-black rounded-[8px] p-2 text-white text-base">
-          Request demo
-        </button>
+
+        <PopupButton
+          className="bg-black rounded-[8px] p-2 text-white text-base"
+          url="https://calendly.com/ufy/unify-product-demo"
+          rootElement={document.getElementById("root")}
+          text="Request demo"
+        />
       </div>
     </div>
   );
