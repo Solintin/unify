@@ -55,7 +55,7 @@ const Footer = () => {
                   <div className="mt-8 text-[#ECD8FF] text-base flex flex-col space-y-5">
                     <Link to="#"> Request a demo </Link>
                     <Link to="#"> Download the app</Link>
-                    <Link to="#"> Features </Link>
+                    <Link to="/features"> Features </Link>
                     <Link to="#"> Certifications by Unify </Link>
                     <Link to="#"> Unify forms </Link>
                   </div>
