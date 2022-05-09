@@ -19,9 +19,7 @@ const OtherProduct = () => {
             />
             <p>Certification by Unify</p>
             <p>
-              Certifications by Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Varius proin pellentesque nibh id nunc, enim,
-              vestibulum consectetur. Nisl posuere aliquam sodales lobortis nunc
+            Certifications by Unify is an online learning platform that allows anyone to watch, listen and learn from our everyday STARS. The goal is to aid people with little or no experience learn from powerfully talented individuals using brilliant storytelling and in-depth learning methods.
             </p>
           </div>
           <div className="flex items-center space-x-2 mb-8">
@@ -32,11 +30,9 @@ const OtherProduct = () => {
         <div className="md:ml-10 col-span-6 w-[312px]">
           <div className="space-y-5 mb-4">
             <img src={forms} className="w-[158px] h-[63px]" alt="" />
-            <p>Certification by Unify</p>
+            <p>Unify forms</p>
             <p>
-              Certifications by Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Varius proin pellentesque nibh id nunc, enim,
-              vestibulum consectetur. Nisl posuere aliquam sodales lobortis nunc
+            A retail product that bridges the gap between K-12 schools that want to double their student intake and students looking for admission in the most stress free way.
             </p>
           </div>
           <div className="flex items-center space-x-2 mb-8">
