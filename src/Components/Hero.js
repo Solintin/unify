@@ -1,6 +1,5 @@
 import React from "react";
 import "./Component-styles.css";
-import arrowright from "../Assets/Svg/arrowrightwhite.svg";
 import HeroImg from "../Assets/Img/HeroImg.png";
 import { Link } from "react-router-dom";
 import { PopupButton } from "react-calendly";
