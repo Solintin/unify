@@ -74,24 +74,29 @@ const Footer = () => {
                 <div>
                   <h1>Socials</h1>
                   <div className="hidden md:flex mt-8 text-[#ECD8FF] text-base  flex-col space-y-5">
-                    <Link to="https://www.instagram.com/unify_ng/"> Instagram </Link>
-                    <Link to="https://web.facebook.com/unifyng/">Facebook</Link>
-                    <Link to="https://twitter.com/unify_ng/"> Twitter </Link>
-                    <Link to="">Linkedin </Link>
+                    <a href="https://www.instagram.com/unify_ng/"> Instagram </a>
+                    
+                    <a href="https://web.facebook.com/unifyng/">Facebook</a>
+                    
+                    <a href="https://twitter.com/unify_ng/"> Twitter </a>
+                    
                   </div>
                   <div className="md:hidden mt-8 flex space-x-9">
-                    <Link to="https://web.facebook.com/unifyng/">
+                    <a href="https://web.facebook.com/unifyng/">
+                    
                       {" "}
                       <img src={fb} alt="" />{" "}
-                    </Link>
-                    <Link to="https://www.instagram.com/unify_ng/">
+                    </a>
+                    <a href="https://www.instagram.com/unify_ng/">
+                    
                       {" "}
                       <img src={ig} alt="" />{" "}
-                    </Link>
-                    <Link to="https://twitter.com/unify_ng/">
+                    </a>
+                    <a href="https://twitter.com/unify_ng/">
+                    
                       {" "}
                       <img src={twitter} alt="" />{" "}
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
