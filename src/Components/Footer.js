@@ -54,7 +54,7 @@ const Footer = () => {
                   <h1>Links</h1>
                   <div className="mt-8 text-[#ECD8FF] text-base flex flex-col space-y-5">
                     <Link to="#"> Request a demo </Link>
-                    <Link to="#"> Downlaod the app</Link>
+                    <Link to="#"> Download the app</Link>
                     <Link to="#"> Features </Link>
                     <Link to="#"> Certifications by Unify </Link>
                     <Link to="#"> Unify forms </Link>
@@ -75,25 +75,25 @@ const Footer = () => {
                   <h1>Socials</h1>
                   <div className="hidden md:flex mt-8 text-[#ECD8FF] text-base  flex-col space-y-5">
                     <a href="https://www.instagram.com/unify_ng/"> Instagram </a>
-                    
+
                     <a href="https://web.facebook.com/unifyng/">Facebook</a>
-                    
+
                     <a href="https://twitter.com/unify_ng/"> Twitter </a>
-                    
+
                   </div>
                   <div className="md:hidden mt-8 flex space-x-9">
                     <a href="https://web.facebook.com/unifyng/">
-                    
+
                       {" "}
                       <img src={fb} alt="" />{" "}
                     </a>
                     <a href="https://www.instagram.com/unify_ng/">
-                    
+
                       {" "}
                       <img src={ig} alt="" />{" "}
                     </a>
                     <a href="https://twitter.com/unify_ng/">
-                    
+
                       {" "}
                       <img src={twitter} alt="" />{" "}
                     </a>
