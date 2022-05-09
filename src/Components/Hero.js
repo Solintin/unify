@@ -3,6 +3,7 @@ import "./Component-styles.css";
 import arrowright from "../Assets/Svg/arrowrightwhite.svg";
 import HeroImg from "../Assets/Img/HeroImg.png";
 import { Link } from "react-router-dom";
+import { PopupButton } from "react-calendly";
 
 const Hero = () => {
   return (
@@ -26,9 +27,13 @@ const Hero = () => {
             remotely and much more, all at no extra spot.
           </p>
           <div className="flex md:justify-start justify-center items-center space-x-9">
-            <button className="cta-button flex items-center space-x-2">
-              <span>Request demo</span> <img src={arrowright} alt="" />
-            </button>
+            <PopupButton
+              className="cta-button flex items-center space-x-2"
+              url="https://calendly.com/ufy/unify-product-demo"
+              rootElement={document.getElementById("root")}
+              text="Request demo"
+            />
+          
             <Link to="#" className="underline">
               Learn More
             </Link>

@@ -8,9 +8,13 @@ import ArrowDown from "../../Assets/Svg/ArrowDown.svg";
 import productUnifyLogo from "../../Assets/Svg/productunifylogo.svg";
 import arrowright from "../../Assets/Svg/arrowright.svg";
 import forms from "../../Assets/Svg/forms.svg";
+import { PopupButton } from "react-calendly";
+import Forms from "../Desktop/Forms";
+
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [productInfo, setProductInfo] = useState(false);
+  const [openForm, setOpenForm] = useState(false);
 
   const offActiveToggledState = () => {
     setIsMobile(false);
@@ -90,8 +94,8 @@ const Header = () => {
                         <img src={forms} alt="" />
                         <p>Unify forms</p>
                       </div>
-                      <div className="flex items-center space-x-2 ">
-                        <p>Visit site</p>
+                      <div className="cursor-pointer flex items-center space-x-2 ">
+                        <p>Go to forms</p>
                         <img src={arrowright} alt="" />
                       </div>
                     </div>
@@ -106,13 +110,23 @@ const Header = () => {
                   FAQs
                 </NavLink>
               </div>
-              <button className="w-full bg-black rounded-[8px] p-2 text-white text-base">
-                Request demo
-              </button>
+              <PopupButton
+                className="bg-black rounded-[8px] p-2 w-full text-white text-base"
+                url="https://calendly.com/ufy/unify-product-demo"
+                rootElement={document.getElementById("root")}
+                text="Request demo"
+              />
             </div>
           </>
         )}
       </div>
+      {openForm && (
+        <Forms
+          handleClose={() => {
+            setOpenForm(!openForm);
+          }}
+        />
+      )}
     </div>
   );
 };

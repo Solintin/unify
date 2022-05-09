@@ -7,51 +7,65 @@ const Faqs = () => {
     {
       id: 1,
       isOpen: false,
-      question: "Is there a web application for Unify?",
+      question: "What is unify??",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "Unify is a holistic educational app that eliminates manual work & helps tertiary institutions achieve maximum productivity by computerizing student, staff & administration lifecycles and minimizing the hassles of the university administration. Unify Mobile App is customized for schools to actively engage with students and parents to enhance cognitive learning experience wherever and whenever.",
     },
     {
       id: 2,
       isOpen: false,
-      question: " Is Unify free?",
+      question: "Who can use Unify?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "Any school can use Unify. It is a tailored solution for every stakeholder in a tertiary institution - be it Colleges, Polytechnics, universities, Seminary, etc",
     },
     {
       id: 3,
       isOpen: false,
-      question: "Are In-person classes available?",
+      question: "How do I get started?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "To get started, register your interest for a demo here. After you are satisfied with the demo session(s), a member of the team will work with you to ensure smooth onboarding.",
     },
     {
       id: 4,
       isOpen: false,
-      question: "Are In-person classes available?",
+      question: "Can Unify accept records from other school portals if we want to migrate?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "Yes, we can format the records and upload them.",
     },
     {
       id: 5,
       isOpen: false,
-      question: "How does billing work?",
+      question: "Is Unify software installed on the computer?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "No, Unify is a cloud-based software so it can be accessed from anywhere at any time and with any device that has internet accessibility.",
     },
     {
       id: 6,
       isOpen: false,
-      question: "What do the different payment packages mean?",
+      question: "Can I perform financial transactions on the Unify platform?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "Yes every stakeholder on Unify is financially included. A Unify wallet along with a unify debit card is issued after successful onboarding. Users can pay school bills, send money, buy airtime and perform other transactions anywhere and anytime.",
     },
     {
       id: 7,
       isOpen: false,
-      question: "What do the different payment packages mean?",
+      question: "How flexible is the software?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, tellus volutpat id adipiscing felis lobortis hac vitae dui. Vitae pellentesque tincidunt ornare elit ut ante vel pulvinar mauris. Nisi, fringilla ac ut vulputate. Sagittis dignissim ac euismod arcu nullam. In elementum aenean imperdiet ut risus, ut. Purus commodo scelerisque et quis montes. Leo massa, elit ut ornare eget viverra tortor eget quisque.  faucibus augu",
+        "Unify is so flexible that certain reports and certain features can be customized to meet the needs and peculiarities of each school.",
+    },
+    {
+      id: 8,
+      isOpen: false,
+      question: "What if there is a system crash in our school, what happens to the school data?",
+      answer:
+        "Your data is not stored on your system but in the cloud. So, if your system crashes it does not affect the data stored on Unify.",
+    },
+    {
+      id: 9,
+      isOpen: false,
+      question: "How secure is Unify?",
+      answer:
+      "The platform is secured and encrypted through SSL",
     },
   ]);
 
@@ -60,8 +74,7 @@ const Faqs = () => {
       faqs.map((item) => {
         if (item.id === id) {
           item.isOpen = !item.isOpen;
-          console.log(item.id);
-          console.log(item.isOpen);
+        
         } else {
           item.isOpen = false;
         }

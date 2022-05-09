@@ -59,13 +59,15 @@ const Footer = () => {
                   <h1>Links</h1>
                   <div className="text-left mt-8 text-[#ECD8FF] text-base flex flex-col space-y-5">
                     <PopupButton
+                      className="text-left"
                       url="https://calendly.com/ufy/unify-product-demo"
                       rootElement={document.getElementById("root")}
                       text="Request demo"
                     />
                     <Link to="#"> Download the app</Link>
                     <Link to="#"> Certifications by Unify </Link>
-                    <p className='cursor-pointer'
+                    <p
+                      className="cursor-pointer"
                       onClick={() => {
                         setOpenForm(!openForm);
                       }}
