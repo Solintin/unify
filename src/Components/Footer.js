@@ -65,7 +65,7 @@ const Footer = () => {
                     />
                     <Link to="#"> Download the app</Link>
                     <Link to="#"> Certifications by Unify </Link>
-                    <p
+                    <p className='cursor-pointer'
                       onClick={() => {
                         setOpenForm(!openForm);
                       }}
