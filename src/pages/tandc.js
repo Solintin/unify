@@ -9,7 +9,7 @@ const privacy = () => {
             <a href="privacy" className="block">Privacy policy</a>
             <a href="/tandc" className="font-medium">Terms &amp; conditions</a>
           </div>
-          <div className="absolute hidden md:block -translate-y-20 translate-x-[150px]  border-r-[2px] border-dashed border-[#F1EBE3] h-[11000px]"></div>
+          <div className="fixed hidden md:block  left-[220px]  border-r-[2px] border-dashed border-[#F1EBE3] bottom-0 top-[80px]"></div>
           <div className="md:w-10/12 w-full">
             <h1 className="text-[40px] font-medium mb-7">
               Terms &amp; conditions
@@ -20,23 +20,23 @@ const privacy = () => {
               <span className="font-bold">Unify</span> is a platform that
               replicates the physical organization, infrastructure and business
               operating model of tertiary schools in a digital application
-              format (the “app” or “Platform”). These infrastructure and
+              format (the "app" or "Platform"). These infrastructure and
               services include finance, operation, education delivery,
               administration, student/alumni affairs and extra curricula
               activities. Unify is developed by
               <span className="font-bold mx-1">
-                C-ONE VENTURES PLATFORM LIMITED (“C-One”),
+                C-ONE VENTURES PLATFORM LIMITED ("C-One"),
               </span>
               a technology driven company that has partnered with Sterling Bank
               Plc (a financial institution registered in Nigeria) for the
               provision of all banking products and services offered on the
               Platform. These Terms & Conditions govern and apply to the grant
-              of, access to and use of the suite of services (“Services”) on the
+              of, access to and use of the suite of services ("Services") on the
               Platform by a User. By accessing, registering and/or using this
               app, you agree to be bound by these Terms and all other terms and
               policies that are applicable to any other account or service
               accessible through this Platform (collectively referred to as
-              “Terms”).
+              "Terms").
             </p>
 
             <h6 className="underline font-bold my-4">Meaning of words:</h6>
@@ -69,7 +69,7 @@ const privacy = () => {
               </p>
 
               <p>
-                <strong>“Forum”</strong> means any group features or fora made
+                <strong>"Forum"</strong> means any group features or fora made
                 available by C-One to you on the Platform to engagement in
                 featured educational activities.
               </p>
