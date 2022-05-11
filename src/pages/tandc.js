@@ -6,8 +6,12 @@ const privacy = () => {
       <div className=" md:px-20 px-5  ">
         <div className="flex ">
           <div className="px-10 w-2/12 hidden md:block ">
-            <a href="privacy" className="block">Privacy policy</a>
-            <a href="/tandc" className="font-medium">Terms &amp; conditions</a>
+            <a href="privacy" className="block">
+              Privacy policy
+            </a>
+            <a href="/tandc" className="font-medium">
+              Terms &amp; conditions
+            </a>
           </div>
           <div className="fixed hidden md:block  left-[220px]  border-r-[2px] border-dashed border-[#F1EBE3] bottom-0 top-[80px]"></div>
           <div className="md:w-10/12 w-full">
@@ -188,7 +192,7 @@ const privacy = () => {
 
             <h6 className="underline font-bold my-4">Your Information:</h6>
             <div className="space-y-4">
-              <ul className='list-disc ml-10'>
+              <ul className="list-disc ml-10">
                 <li> Information we collect</li>
               </ul>
 
@@ -214,7 +218,7 @@ const privacy = () => {
                 close your Unify account.
               </p>
 
-              <ul className='list-disc ml-10'>
+              <ul className="list-disc ml-10">
                 <li> Incorrect information</li>
                 <p>
                   If We discover that the information We hold about you is
@@ -270,7 +274,7 @@ const privacy = () => {
               <p>
                 We may not approve receipt of funds into your Unify Wallet if:
               </p>
-              <ul className='list-disc ml-10'>
+              <ul className="list-disc ml-10">
                 <li>Your Unify Account has been suspended</li>
                 <li>Your Unify Account has been cancelled or deleted</li>
                 <li>
@@ -388,7 +392,7 @@ const privacy = () => {
                 we consider it reasonable to do so. Without limitation, this
                 includes the following:
               </p>
-              <ul className='list-disc ml-10'>
+              <ul className="list-disc ml-10">
                 <li>
                   The payment instructions provided by you or a third party are
                   unclear
@@ -516,7 +520,10 @@ const privacy = () => {
               </p>
               <p>
                 To change your transaction PIN, you would need to contact us at
-                <a href="mailto:support@unifyedu.ng." className="text-blue-300 mx-1">
+                <a
+                  href="mailto:support@unifyedu.ng."
+                  className="text-blue-300 mx-1"
+                >
                   support@unifyedu.ng.
                 </a>
                 If your PIN is compromised in any way, you are required to
@@ -552,7 +559,7 @@ const privacy = () => {
                 channels (see the ‘How We will contact you section above).
               </p>
               <p>You will be unable to recover money have lost if:</p>
-              <ul className='list-disc ml-10'>
+              <ul className="list-disc ml-10">
                 <li>
                   you provide and authenticate incorrect instructions on the
                   basis of which a transaction is processed (although we will
@@ -665,9 +672,7 @@ const privacy = () => {
                 rights to attribution with respect to Educational Content.
               </p>
             </div>
-            <h6 className="underline font-bold my-4">
-              Ownership of Educational Content
-            </h6>
+            <h6 className="underline font-bold my-4">Removal of Content </h6>
             <p>
               We may not screen, edit, or monitor all Content hosted on the
               Platform. We may however, in our sole discretion, delete, limit or
@@ -730,7 +735,7 @@ const privacy = () => {
               Terms and all applicable laws, guidelines and regulations. You are
               strictly prohibited from all of the following:
             </p>
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>
                 Gain or attempt to gain access to another User’s account or any
                 non-public portions of the Platform,
@@ -773,7 +778,7 @@ const privacy = () => {
               agree that in your engagement in any Discussion Group, you shall
               not:
             </p>
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>
                 forge headers or manipulate identifiers in order to disguise the
                 origin of any content submitted to any part of the Community;
@@ -830,7 +835,7 @@ const privacy = () => {
               We have compiled a list of things you need to do to help us keep
               your account safe:
             </p>
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>
                 It is your sole responsibility to keep your account safe:
                 Security Details, PIN and any part of your account security must
@@ -890,7 +895,7 @@ const privacy = () => {
               you for any of the following:
             </p>
 
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>
                 any loss or damage you suffer as a result of using your account;
               </li>
@@ -945,7 +950,7 @@ const privacy = () => {
               your card and app immediately and without notice in order to
               maintain security, if:
             </p>
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>You have breached the terms and conditions</li>
               <li>You provide us with false information at any time</li>
               <li>We suspect fraud or an attempt at fraud</li>
@@ -966,7 +971,7 @@ const privacy = () => {
             <h6 className="underline font-bold my-4">
               When your Unify Account is Closed
             </h6>
-            <ul className='list-disc ml-10'>
+            <ul className="list-disc ml-10">
               <li>
                 We may cancel any card linked to your Unify account and disable
                 access to payment facilities linked to the account;
@@ -989,7 +994,10 @@ const privacy = () => {
             <div className="space-y-4">
               <p>
                 If you have a complaint, please contact us via email at
-                <a href="mailto:support@unifyedu.ng" className="text-blue-300 mx-1">
+                <a
+                  href="mailto:support@unifyedu.ng"
+                  className="text-blue-300 mx-1"
+                >
                   support@unifyedu.ng
                 </a>
               </p>
@@ -997,12 +1005,48 @@ const privacy = () => {
               <p>
                 You may also share your issues, feedback or suggestions via
                 email at
-                <a href="mailto:support@unifyedu.ng" className="text-blue-300 mx-1">
+                <a
+                  href="mailto:support@unifyedu.ng"
+                  className="text-blue-300 mx-1"
+                >
                   support@unifyedu.ng
                 </a>
               </p>
               <p>
                 Feedback will be monitored to help improve how We serve you!
+              </p>
+            </div>
+            <h6 className="underline font-bold my-4">Governing Law</h6>
+            <p>
+              The rights and obligations of Users and C-One created under these
+              Terms and Conditions and other agreements entered into by the User
+              with C-One will be governed in accordance with the laws of the
+              Federal Republic of Nigeria, without giving effect to the conflict
+              of laws principles.
+            </p>
+
+            <h6 className="underline font-bold my-4">Dispute Resolution </h6>
+            <div className="space-y-4">
+              <p>
+                All disputes which may arise from the User’s access to and use
+                of the Unify account, application, platform, and website and the
+                application of these terms and conditions shall be resolved in
+                compliance with the provisions of the laws of the Federal
+                Republic of Nigeria exclusively.
+              </p>
+              <p>
+                We shall attempt to resolve any disputes, claims or controversy
+                arising out of or in connection with these Terms and Conditions
+                or other contracts with you by mediation at the Multi-Door
+                Courthouse of the High Court of Lags State.
+              </p>
+              <p>
+                Notwithstanding the above, We shall be entitled to institute an
+                action in any Nigerian court of competent jurisdiction to obtain
+                interim relief or to seek injunctive reliefs in order to protect
+                our interests or enforce any right or obligation arising out of,
+                or in connection with these Terms and Conditions or other
+                contracts with You.
               </p>
             </div>
             <h6 className="underline font-bold my-4">
